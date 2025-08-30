@@ -2,7 +2,6 @@
 
 ### *ECG Arrhythmia Detection via Multi-Branch Transformer Fusion*
 
-<img width="1152" height="896" alt="CardioSense_Picture" src="https://github.com/user-attachments/assets/acadfed6-448f-40b7-a029-85e9560ecbec" />
 <img width="576" height="448" alt="CardioSense_Picture" src="https://github.com/user-attachments/assets/acadfed6-448f-40b7-a029-85e9560ecbec" />
 
 ---
