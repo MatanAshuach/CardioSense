@@ -31,10 +31,10 @@ We designed three complementary branches: a Transformer branch for global contex
 
 ---
 ## Repository Structure
-CardioSense/
-#├── CardioSense.ipynb # Main Jupyter notebook with the full pipeline
-#├── README.md # Documentation (this file)
-#└── data/ # (User-provided) folder for ECG5000 dataset
+
+CardioSense.ipynb # Main Jupyter notebook with the full pipeline
+README.md # Documentation (this file)
+data # (User-provided) folder for ECG5000 dataset
 
 ### Dataset Setup
 
