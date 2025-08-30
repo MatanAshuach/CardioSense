@@ -50,7 +50,7 @@ The rest of the code will automatically use the ECG5000 dataset once it's placed
 
 --- 
 
-### Model Architectures
+# Model Architectures
 
 ### 1. Baseline Transformer
 
