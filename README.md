@@ -1,4 +1,4 @@
-#### CardioSense
+### *CardioSense*
 
 ### *Deep Learning for ECG Arrhythmia Detection*
 
