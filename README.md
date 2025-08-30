@@ -92,8 +92,9 @@ The rest of the code will automatically use the ECG5000 dataset once it's placed
 
 - **Classifier:** Same as dual-branch head.  
 - **Rationale:** Adds **sequential recurrence** to complement convolution and attention, yielding a richer feature set that mirrors ECG’s temporal-biological structure.  
+---
 
-### Hyperparameters
+## Hyperparameters
 
 The following hyperparameters are configurable in the notebook:
 
@@ -107,7 +108,7 @@ The following hyperparameters are configurable in the notebook:
 | `batch_size`   | Number of samples per gradient update             |
 
 
-### Dataset and Data Processing
+## Dataset and Data Processing
 
  ECG5000 Dataset
 
@@ -137,7 +138,7 @@ The following hyperparameters are configurable in the notebook:
 
 ---
 
-### Academic Inspirations
+## Academic Inspirations
 
 Our project draws inspiration from several key academic articles in the field of ECG classification using deep learning methods. Below are some relevant papers:
 
