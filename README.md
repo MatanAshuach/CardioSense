@@ -37,8 +37,9 @@ We designed three complementary branches: a Transformer branch for global contex
 -ECG5000.zip - folder for downloading the ECG5000 dataset 
 
 -README.md - Documentation (this file)
+---
 
-### Dataset Setup
+## Dataset Setup
 
 To run the project, you will need to manually download the ECG5000 dataset and upload it to your environment, or you can use the dataset already included in the repository.
 
