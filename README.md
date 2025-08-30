@@ -63,7 +63,7 @@ The rest of the code will automatically use the ECG5000 dataset once it's placed
 - **Input processing:** A Conv1d stem projects input ECG signals into `d_model` dimensions.  
 - **Core layers:** Positional encoding + stacked Transformer encoder layers (`num_layers`, `nhead`).  
 - **Pooling:** Attention pooling compresses the sequence into a single vector.  
-- **Classifier:** Linear → RELU → Linear for final logits.  
+- **Classifier:** Linear → RELU → Linear for final logits. (changed to GELU in ensemble models)
 - **Rationale:** Captures long-range dependencies in ECG sequences, establishing a clean baseline.  
 
 ---
