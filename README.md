@@ -1,6 +1,7 @@
 #### CardioSense
 
-*Deep Learning for ECG Arrhythmia Detection*
+### *Deep Learning for ECG Arrhythmia Detection*
+
 <img width="1152" height="896" alt="CardioSense_Picture" src="https://github.com/user-attachments/assets/acadfed6-448f-40b7-a029-85e9560ecbec" />
 
 ---
@@ -22,7 +23,7 @@ Our **goal** is not only to compare these architectures under fair experimental 
 By integrating these insights, we aim to demonstrate that adapting model architectures to the **temporal and biological properties of ECG data** can improve classification performance and generalization compared to a plain baseline Transformer.
 
 ---
-###Background
+### Background
 Cardiovascular diseases remain the leading cause of death globally, with arrhythmias representing a critical subset that can lead to sudden cardiac death if undetected. Traditional ECG monitoring relies heavily on manual interpretation by cardiologists, creating bottlenecks in clinical workflows and potential for human error in life-critical diagnoses. CardioSense addresses this challenge by exploring how vanilla transformer architectures can be enhanced for biological signal processing, specifically targeting the unique temporal-biological characteristics inherent in ECG signals. Unlike text or speech, ECG waveforms exhibit multi-scale temporal dependencies (both short-term P-QRS-T complexes and long-term rhythmic variations), hierarchical biological structure with clear anatomical correlates, and non-stationary dynamics that require adaptive feature extraction.
 Our multi-branch approach was inspired by recent SOTA developments.
 
@@ -50,7 +51,7 @@ The rest of the code will automatically use the ECG5000 dataset once it's placed
 
 --- 
 
-## Model Architectures
+### Model Architectures
 
 ### 1. Baseline Transformer
 
@@ -93,7 +94,7 @@ The rest of the code will automatically use the ECG5000 dataset once it's placed
 - **Classifier:** Same as dual-branch head.  
 - **Rationale:** Adds **sequential recurrence** to complement convolution and attention, yielding a richer feature set that mirrors ECG’s temporal-biological structure.  
 
-Hyperparameters
+### Hyperparameters
 
 The following hyperparameters are configurable in the notebook:
 
@@ -107,7 +108,7 @@ The following hyperparameters are configurable in the notebook:
 | `batch_size`   | Number of samples per gradient update             |
 
 
-###Dataset and Data Processing
+### Dataset and Data Processing
 
  ECG5000 Dataset
 
@@ -137,7 +138,7 @@ The following hyperparameters are configurable in the notebook:
 
 ---
 
-## Academic Inspirations
+### Academic Inspirations
 
 Our project draws inspiration from several key academic articles in the field of ECG classification using deep learning methods. Below are some relevant papers:
 
