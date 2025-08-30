@@ -32,9 +32,9 @@ We designed three complementary branches: a Transformer branch for global contex
 ---
 ## Repository Structure
 
-CardioSense.ipynb # Main Jupyter notebook with the full pipeline
-README.md # Documentation (this file)
-data # (User-provided) folder for ECG5000 dataset
+CardioSense.ipynb - Main Jupyter notebook with the full pipeline
+README.md - Documentation (this file)
+data - (User-provided) folder for ECG5000 dataset
 
 ### Dataset Setup
 
@@ -43,7 +43,7 @@ To run the project, you will need to manually download the ECG5000 dataset and u
 1.1 **Option 1: Download the ECG5000 dataset** from [Time Series Classification Archive - ECG5000 Dataset](https://www.timeseriesclassification.com/description.php?Dataset=ECG5000).
    
 1.2 **Option 2: Use the ECG5000 dataset already included in the repository**:  
-   You can find the ECG5000 dataset in the `data/` folder as a zip file (`ECG5000.zip`). Simply unzip it into the appropriate directory.
+   You can find the ECG5000 dataset in the `ECG5000.zip` folder as a zip file (`ECG5000.zip`). Simply unzip it into the appropriate directory.
 
 2. Upload the dataset to your Google Drive in the directory: `/content/drive/MyDrive/Deep_Learning/datasets` (this is the default path in the code).
 
