@@ -147,13 +147,13 @@ The following hyperparameters are configurable in the notebook:
 
 The results from the different models confirm that integrating multiple architectures, especially those that capture both local and global features, significantly improves ECG arrhythmia detection performance. Here’s a breakdown of the key models and why the results make sense in the context of their design:
 
-### Baseline Transformer (Accuracy: 99.10%)
+### Baseline Transformer 
 The **Baseline Transformer** performed well, achieving an accuracy of **99.10%**. This result is expected given that the Transformer model is excellent at capturing long-range temporal dependencies in time-series data, which is important for detecting arrhythmias. However, while the Transformer can learn global patterns over time, it may not capture the local intricacies of ECG signals (like the P-QRS-T waveform), which are vital for accurate arrhythmia detection. This limitation likely explains why the **accuracy is slightly lower** compared to the more advanced architectures.
 
-### Dual-Branch Model (Accuracy: 99.80%)
+### Dual-Branch Model 
 The **Dual-Branch Model**, which combines the Transformer with a **Temporal Convolutional Network (TCN)**, outperformed the baseline Transformer with an accuracy of **99.80%**. The **TCN branch** helps capture **local temporal features** like the QRS complex, which is crucial in ECG signals. The TCN uses dilated convolutions to efficiently process the data and capture local dependencies, which is why we see an improvement over the baseline model. The fusion of the **Transformer's global context modeling** and **TCN's local pattern recognition** enabled the model to achieve **better performance**, especially in terms of capturing arrhythmia signals that depend on both long-term and short-term temporal patterns.
 
-### Tri-Branch Model (Accuracy: 99.60%)
+### Tri-Branch Model
 The **Tri-Branch Model**, which integrates **Transformer**, **TCN**, and **BiLSTM**, achieved the **highest performance** with an accuracy of **99.60%,** though it's slightly lower than the Dual-Branch’s performance. This model benefits from the BiLSTM branch, which captures **sequential dependencies** from both past and future states in ECG signals. The BiLSTM enables the model to **better understand the sequential nature of heartbeats**, which is crucial for arrhythmia detection. Furthermore, the **softmax-gated fusion mechanism** that combines the three branches ensures that the model can dynamically choose the best representation from each of the branches, making it more adaptable and robust for various types of ECG signal patterns.
 
 The reason for the **Tri-Branch Model's highest ranking** is due to our **method of selecting the best model based on multiple evaluation criteria**, prioritizing **PR-AUC (threshold-free)**, then **F1** (thresholded at tau), **ROC-AUC**, and finally **Balanced Accuracy**. By using **PR-AUC** as the primary metric, we focus on the model's ability to correctly identify minority class instances, which is critical in imbalanced classification tasks like arrhythmia detection. The **Tri-Branch Model** consistently outperformed the other models on **PR-AUC**, which is why it ranks the highest, especially in terms of **robustness to new, unseen data**.
