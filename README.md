@@ -37,7 +37,33 @@ We designed three complementary branches: a Transformer branch for global contex
 - .gitignore
 - requirements.txt
 -  environment.yml
+Repository Structure
 
+notebook/ – Jupyter notebooks
+
+CardioSense.ipynb – Main notebook with the full pipeline (loads data from Google Drive path, trains, evaluates, and generates plots).
+
+figs/ – Static figures used in the report and README
+
+CM-baseline.png, CM-dual.png, CM-tri.png – Confusion matrices.
+
+curves_baseline.png, curves_dual.png, curves_tri.png – Training/validation curves.
+
+(Add any additional result images here.)
+
+env/ – Environment specifications (choose CPU or GPU)
+
+environment-gpu.yml – Conda environment for NVIDIA GPUs (PyTorch 2.2 + CUDA 12.1).
+
+environment-cpu.yml – Conda environment for CPU-only setups.
+
+requirements-gpu-cu121.txt – Pip requirements for GPU installs (uses PyTorch CUDA 12.1 wheels).
+
+requirements-cpu.txt – Pip requirements for CPU-only installs.
+
+README.md – Project documentation: how to run, where to place the dataset in Drive, hyper-parameters, and this structure section.
+
+.gitignore – Ignore rules for caches, checkpoints, and archives to keep the repo clean and lightweight.
 ---
 
 ## Dataset Setup
@@ -53,7 +79,16 @@ To run the project, you will need to manually download the ECG5000 dataset and u
 The rest of the code will automatically use the ECG5000 dataset once it's placed in the correct directory.
 
 --- 
+**##Setup**
+### Setup with conda (choose one)
+GPU: `conda env create -f env/environment-gpu.yml && conda activate cardioSense-gpu`  
+CPU: `conda env create -f env/environment-cpu.yml && conda activate cardioSense-cpu`
 
+### Setup with pip (choose one)
+GPU (CUDA 12.1): `pip install -r env/requirements-gpu-cu121.txt`  
+CPU: `pip install -r env/requirements-cpu.txt`
+
+---
 # Model Architectures
 
 ### 1. Baseline Transformer
