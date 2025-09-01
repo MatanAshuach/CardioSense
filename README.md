@@ -33,19 +33,6 @@ We designed three complementary branches: a Transformer branch for global contex
 
 ##  Repository Structure
 
-- notebook/ – Jupyter notebooks
-  - CardioSense.ipynb – Main notebook with the full pipeline (loads data from Google Drive path, trains, evaluates, and generates plots).
-
-- figs/ – Static figures used in the report and README
-
-  - CM-baseline.png, CM-dual.png, CM-tri.png – Confusion matrices.
-
-  - curves_baseline.png, curves_dual.png, curves_tri.png – Training/validation curves.
-
-  - 3 models summarySummary.png – Cross-model results table (Acc, F1, ROC_AUC, PR_AUC, Sens, Spec, PPV, NPV, BalAcc).
-
-  - Winner Summary.png – “Single-Run WINNER” summary panel with the best model and its key metrics.
-
 - env/ – Environment specifications (choose CPU or GPU)
 
     - environment-gpu.yml – Conda environment for NVIDIA GPUs (PyTorch 2.2 + CUDA 12.1).
@@ -55,6 +42,21 @@ We designed three complementary branches: a Transformer branch for global contex
     - requirements-gpu-cu121.txt – Pip requirements for GPU installs (uses PyTorch CUDA 12.1 wheels).
 
     - requirements-cpu.txt – Pip requirements for CPU-only installs.
+  
+- figs/ – Static figures used in the report and README
+
+  - CM-baseline.png, CM-dual.png, CM-tri.png – Confusion matrices.
+
+  - curves_baseline.png, curves_dual.png, curves_tri.png – Training/validation curves.
+
+  - 3 models summarySummary.png – Cross-model results table (Acc, F1, ROC_AUC, PR_AUC, Sens, Spec, PPV, NPV, BalAcc).
+
+  - Winner Summary.png – “Single-Run WINNER” summary panel with the best model and its key metrics.
+ 
+- notebook/ – Jupyter notebooks
+  - CardioSense.ipynb – Main notebook with the full pipeline (loads data from Google Drive path, trains, evaluates, and generates plots).
+
+
 
 - README.md – Project documentation: how to run, where to place the dataset in Drive, hyper-parameters, and this structure section.
 
