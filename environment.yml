@@ -1,4 +1,4 @@
-name: cardio
+name: cardiosense
 channels:
   - pytorch
   - nvidia
