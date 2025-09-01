@@ -1,0 +1,16 @@
+name: cardio
+channels: [pytorch, conda-forge, nvidia]
+dependencies:
+  - python=3.10
+  - pytorch=2.2
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - tqdm
+  - pip
+  - pip:
+      - seaborn
