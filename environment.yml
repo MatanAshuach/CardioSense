@@ -1,16 +1,20 @@
 name: cardio
-channels: [pytorch, conda-forge, nvidia]
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
 dependencies:
   - python=3.10
   - pytorch=2.2
-  - torchvision
-  - torchaudio
-  - pytorch-cuda=12.1
+  - torchvision=0.17
+  - torchaudio=2.2
+  - pytorch-cuda=12.1        # GPU build (משתמש ב-CUDA 12.1 מהערוץ nvidia)
   - numpy
   - pandas
   - scikit-learn
   - matplotlib
   - tqdm
+  - seaborn                  # עדיף דרך conda (אפשר גם להשאיר ב-pip)
   - pip
-  - pip:
-      - seaborn
+  # - pip:
+  #     - seaborn==0.13.*    # אם בכל זאת מעדיף דרך pip – בטל את ה-seaborn שלמעלה והפעל את אלה
