@@ -42,7 +42,9 @@ We designed three complementary branches: a Transformer branch for global contex
 
   - curves_baseline.png, curves_dual.png, curves_tri.png – Training/validation curves.
 
-  - (Add any additional result images here.)
+  - 3 models summarySummary.png – Cross-model results table (Acc, F1, ROC_AUC, PR_AUC, Sens, Spec, PPV, NPV, BalAcc).
+
+  - Winner Summary.png – “Single-Run WINNER” summary panel with the best model and its key metrics.
 
 - env/ – Environment specifications (choose CPU or GPU)
 
