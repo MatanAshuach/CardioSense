@@ -37,33 +37,33 @@ We designed three complementary branches: a Transformer branch for global contex
 - .gitignore
 - requirements.txt
 -  environment.yml
-Repository Structure
 
-notebook/ – Jupyter notebooks
+  ##  Repository Structure
 
-CardioSense.ipynb – Main notebook with the full pipeline (loads data from Google Drive path, trains, evaluates, and generates plots).
+- notebook/ – Jupyter notebooks
+-    CardioSense.ipynb – Main notebook with the full pipeline (loads data from Google Drive path, trains, evaluates, and generates plots).
 
-figs/ – Static figures used in the report and README
+- figs/ – Static figures used in the report and README
 
-CM-baseline.png, CM-dual.png, CM-tri.png – Confusion matrices.
+-    CM-baseline.png, CM-dual.png, CM-tri.png – Confusion matrices.
 
-curves_baseline.png, curves_dual.png, curves_tri.png – Training/validation curves.
+-    curves_baseline.png, curves_dual.png, curves_tri.png – Training/validation curves.
 
-(Add any additional result images here.)
+-    (Add any additional result images here.)
 
-env/ – Environment specifications (choose CPU or GPU)
+- env/ – Environment specifications (choose CPU or GPU)
 
-environment-gpu.yml – Conda environment for NVIDIA GPUs (PyTorch 2.2 + CUDA 12.1).
+-    environment-gpu.yml – Conda environment for NVIDIA GPUs (PyTorch 2.2 + CUDA 12.1).
 
-environment-cpu.yml – Conda environment for CPU-only setups.
+-    environment-cpu.yml – Conda environment for CPU-only setups.
 
-requirements-gpu-cu121.txt – Pip requirements for GPU installs (uses PyTorch CUDA 12.1 wheels).
+-    requirements-gpu-cu121.txt – Pip requirements for GPU installs (uses PyTorch CUDA 12.1 wheels).
 
-requirements-cpu.txt – Pip requirements for CPU-only installs.
+-    requirements-cpu.txt – Pip requirements for CPU-only installs.
 
-README.md – Project documentation: how to run, where to place the dataset in Drive, hyper-parameters, and this structure section.
+- README.md – Project documentation: how to run, where to place the dataset in Drive, hyper-parameters, and this structure section.
 
-.gitignore – Ignore rules for caches, checkpoints, and archives to keep the repo clean and lightweight.
+- .gitignore – Ignore rules for caches, checkpoints, and archives to keep the repo clean and lightweight.
 ---
 
 ## Dataset Setup
