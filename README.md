@@ -34,7 +34,7 @@ We designed three complementary branches: a Transformer branch for global contex
 ##  Repository Structure
 
 - notebook/ – Jupyter notebooks
-  -CardioSense.ipynb – Main notebook with the full pipeline (loads data from Google Drive path, trains, evaluates, and generates plots).
+- - CardioSense.ipynb – Main notebook with the full pipeline (loads data from Google Drive path, trains, evaluates, and generates plots).
 
 - figs/ – Static figures used in the report and README
 
