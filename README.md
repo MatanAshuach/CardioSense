@@ -56,11 +56,11 @@ We designed three complementary branches: a Transformer branch for global contex
 - notebook/ – Jupyter notebooks
   - CardioSense.ipynb – Main notebook with the full pipeline (loads data from Google Drive path, trains, evaluates, and generates plots).
 
-
+- .gitignore – Ignore rules for caches, checkpoints, and archives to keep the repo clean and lightweight.
 
 - README.md – Project documentation: how to run, where to place the dataset in Drive, hyper-parameters, and this structure section.
 
-- .gitignore – Ignore rules for caches, checkpoints, and archives to keep the repo clean and lightweight.
+
 ---
 
 ## Dataset Setup
