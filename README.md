@@ -31,7 +31,7 @@ We designed three complementary branches: a Transformer branch for global contex
 
 ---
 ## Repository Structure
-- notebooks/CardioSense.ipynb - Main Jupyter notebook with the full pipeline
+- notebook/CardioSense.ipynb - Main Jupyter notebook with the full pipeline
 - figs/ - figures used in report
 - README.md - Documentation (this file)
 - .gitignore
