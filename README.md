@@ -38,21 +38,21 @@ We designed three complementary branches: a Transformer branch for global contex
 
 - figs/ – Static figures used in the report and README
 
--    CM-baseline.png, CM-dual.png, CM-tri.png – Confusion matrices.
+  - CM-baseline.png, CM-dual.png, CM-tri.png – Confusion matrices.
 
--    curves_baseline.png, curves_dual.png, curves_tri.png – Training/validation curves.
+  - curves_baseline.png, curves_dual.png, curves_tri.png – Training/validation curves.
 
--    (Add any additional result images here.)
+  - (Add any additional result images here.)
 
 - env/ – Environment specifications (choose CPU or GPU)
 
--    environment-gpu.yml – Conda environment for NVIDIA GPUs (PyTorch 2.2 + CUDA 12.1).
+    - environment-gpu.yml – Conda environment for NVIDIA GPUs (PyTorch 2.2 + CUDA 12.1).
 
--    environment-cpu.yml – Conda environment for CPU-only setups.
+    - environment-cpu.yml – Conda environment for CPU-only setups.
 
--    requirements-gpu-cu121.txt – Pip requirements for GPU installs (uses PyTorch CUDA 12.1 wheels).
+    - requirements-gpu-cu121.txt – Pip requirements for GPU installs (uses PyTorch CUDA 12.1 wheels).
 
--    requirements-cpu.txt – Pip requirements for CPU-only installs.
+    - requirements-cpu.txt – Pip requirements for CPU-only installs.
 
 - README.md – Project documentation: how to run, where to place the dataset in Drive, hyper-parameters, and this structure section.
 
