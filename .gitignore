@@ -1,0 +1,16 @@
+# data & artifacts
+data/*
+!data/.gitkeep
+results/*
+figures/*.pdf
+runs/*
+*.zip
+*.pt
+*.pth
+*.onnx
+
+# notebooks/cache
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
