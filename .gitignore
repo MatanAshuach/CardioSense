@@ -1,17 +1,43 @@
-# data & artifacts
-data/*
-!data/.gitkeep
-results/*
-!results/.gitkeep
-figures/*.pdf
-runs/*
-*.zip
+# OS / Editors
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML / training artifacts (שומרים על הרפו נקי)
 *.pt
 *.pth
 *.onnx
+*.ckpt
+*.log
+*.tmp
 
-# notebooks/cache
-.ipynb_checkpoints/
-__pycache__/
-*.pyc
-.DS_Store
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.bz2
+*.xz
+
+# (אופציונלי) תיקיות תוצרים אם תיווצרנה בהמשך
+results/
+runs/
