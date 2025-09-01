@@ -2,6 +2,7 @@
 data/*
 !data/.gitkeep
 results/*
+!results/.gitkeep
 figures/*.pdf
 runs/*
 *.zip
