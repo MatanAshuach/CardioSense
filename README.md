@@ -76,7 +76,7 @@ To run the project, you will need to manually download the ECG5000 dataset and u
 The rest of the code will automatically use the ECG5000 dataset once it's placed in the correct directory.
 
 --- 
-##Setup
+## Setup
 ### Setup with conda (choose one)
 GPU: `conda env create -f env/environment-gpu.yml && conda activate cardioSense-gpu`  
 CPU: `conda env create -f env/environment-cpu.yml && conda activate cardioSense-cpu`
