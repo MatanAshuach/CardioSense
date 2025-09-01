@@ -30,18 +30,11 @@ Our multi-branch approach was inspired by recent SOTA developments.
 We designed three complementary branches: a Transformer branch for global context modeling across heartbeat sequences, a TCN branch with dilated convolutions for local morphological feature extraction and a BiLSTM branch for sequential pattern recognition between consecutive heartbeats (motivated by recent CNN-BiLSTM hybrid models). Our key innovation lies in the learnable softmax-gated fusion mechanism that dynamically weights each branch's contribution, combined with WeightedRandomSampler to address clinical class imbalance, creating a biologically-informed architecture that tailors transformer capabilities to cardiac signal analysis.
 
 ---
-## Repository Structure
-- notebook/CardioSense.ipynb - Main Jupyter notebook with the full pipeline
-- figs/ - figures used in report
-- README.md - Documentation (this file)
-- .gitignore
-- requirements.txt
--  environment.yml
 
-  ##  Repository Structure
+##  Repository Structure
 
 - notebook/ – Jupyter notebooks
--    CardioSense.ipynb – Main notebook with the full pipeline (loads data from Google Drive path, trains, evaluates, and generates plots).
+  -CardioSense.ipynb – Main notebook with the full pipeline (loads data from Google Drive path, trains, evaluates, and generates plots).
 
 - figs/ – Static figures used in the report and README
 
